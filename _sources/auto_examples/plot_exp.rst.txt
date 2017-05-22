@@ -59,10 +59,10 @@ stacking multiple images.
     if __name__ == '__main__':
         main()
 
-**Total running time of the script:** ( 0 minutes  0.115 seconds)
+**Total running time of the script:** ( 0 minutes  0.166 seconds)
 
 .. image:: http://mybinder.org/badge.svg
-      :target: http://beta.mybinder.org/gh/sphinx-gallery/sphinx-gallery/gh-pages/_downloads/plot_exp.ipynb
+      :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_exp.ipynb&submit=true
 
 
 
