@@ -66,11 +66,11 @@ version.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.086 seconds)
+**Total running time of the script:** ( 0 minutes  0.090 seconds)
 
 .. image:: http://mybinder.org/badge.svg
       :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_gallery_version.ipynb&submit=true
-      :width:150 px
+      :width: 150 px
 
 
 

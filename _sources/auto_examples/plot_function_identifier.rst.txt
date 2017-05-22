@@ -54,11 +54,11 @@ functions are called in the script and to which module do they belong.
     plt.draw()
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.108 seconds)
+**Total running time of the script:** ( 0 minutes  0.080 seconds)
 
 .. image:: http://mybinder.org/badge.svg
       :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_function_identifier.ipynb&submit=true
-      :width:150 px
+      :width: 150 px
 
 
 

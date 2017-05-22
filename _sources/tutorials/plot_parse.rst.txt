@@ -180,7 +180,7 @@ That's all folks !
 
 .. image:: http://mybinder.org/badge.svg
       :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_parse.ipynb&submit=true
-      :width:150 px
+      :width: 150 px
 
 
 
