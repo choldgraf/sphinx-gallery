@@ -100,10 +100,11 @@ One line out
     one line out
 
 
-**Total running time of the script:** ( 0 minutes  0.002 seconds)
+**Total running time of the script:** ( 0 minutes  0.000 seconds)
 
 .. image:: http://mybinder.org/badge.svg
       :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_strings.ipynb&submit=true
+      :width:150 px
 
 
 

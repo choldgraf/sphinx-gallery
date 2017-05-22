@@ -24,6 +24,7 @@ Doing a list
 
 .. image:: http://mybinder.org/badge.svg
       :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/just_code.ipynb&submit=true
+      :width:150 px
 
 
 

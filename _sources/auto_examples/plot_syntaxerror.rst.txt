@@ -46,6 +46,7 @@ Example script with invalid Python syntax
 
 .. image:: http://mybinder.org/badge.svg
       :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_syntaxerror.ipynb&submit=true
+      :width:150 px
 
 
 
