@@ -23,7 +23,7 @@ Doing a list
 **Total running time of the script:** ( 0 minutes  0.000 seconds)
 
 .. image:: http://mybinder.org/badge.svg
-      :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/just_code.ipynb&submit=true
+      :target: http://beta.mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/just_code.ipynb
       :width: 150 px
 
 

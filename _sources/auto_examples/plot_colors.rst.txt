@@ -85,10 +85,10 @@ with interleaving prose.
     This writes to stdout and will be  displayed in the HTML file
 
 
-**Total running time of the script:** ( 0 minutes  0.169 seconds)
+**Total running time of the script:** ( 0 minutes  0.153 seconds)
 
 .. image:: http://mybinder.org/badge.svg
-      :target: http://beta.mybinder.org/?url=choldgraf/sphinx-gallery&ref=gh-pages&filepath=_downloads/plot_colors.ipynb&submit=true
+      :target: http://beta.mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_colors.ipynb
       :width: 150 px
 
 
