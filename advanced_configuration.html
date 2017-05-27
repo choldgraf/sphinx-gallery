@@ -393,6 +393,31 @@ to use the 2nd figure created as the thumbnail:</p>
 <a class="reference internal" href="auto_examples/plot_choose_thumbnail.html#sphx-glr-auto-examples-plot-choose-thumbnail-py"><span class="std std-ref">Choosing the thumbnail figure</span></a> for an example
 of this functionality.</p>
 </div>
+<div class="section" id="generate-binder-links-for-gallery-notebooks">
+<h2>Generate Binder links for gallery notebooks<a class="headerlink" href="#generate-binder-links-for-gallery-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx-Gallery automatically generates Jupyter notebooks for any
+examples built with the gallery. If you host your documentation on
+a GitHub repository, it is possible to auto-generate a Binder link
+for each notebook. Clicking this link will take users to a live
+version of the Jupyter notebook where they may run the code interactively.</p>
+<p>In order to enable Binder links with Sphinx-Gallery, you must specify
+a few pieces of information in <code class="docutils literal"><span class="pre">conf.py</span></code>. These are given as a nested
+dictionary following the pattern below:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sphinx_gallery_conf</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">...</span>
+  <span class="s1">&#39;binder&#39;</span><span class="p">:</span> <span class="p">{</span>
+     <span class="s1">&#39;org&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;github_org&gt;&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;repo&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;github_repo&gt;&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;binder_url&gt;&#39;</span><span class="p">,</span>  <span class="c1"># URL serving binders (e.g. mybinder.org)</span>
+     <span class="s1">&#39;branch&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;repo_branch&gt;&#39;</span><span class="p">,</span>  <span class="c1"># Can also be a tag or commit hash</span>
+     <span class="s1">&#39;dependencies&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;path_to_dependencies&gt;&#39;</span>  <span class="c1"># Either `requirements.txt` or `environment.yml`</span>
+     <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>See the Sphinx-Gallery configuration with Binder for an example that uses
+the <a class="reference external" href="http://beta.mybinder.org">public Binder servers</a>.</p>
+</div>
 <div class="section" id="build-the-gallery-without-executing-the-examples">
 <h2>Build the Gallery without executing the examples<a class="headerlink" href="#build-the-gallery-without-executing-the-examples" title="Permalink to this headline">¶</a></h2>
 <p>Sphinx-Gallery can parse all your examples and build the gallery
@@ -492,6 +517,7 @@ the example script.</p>
 </li>
 <li><a class="reference internal" href="#using-a-custom-default-thumbnail-image">Using a custom default thumbnail image</a></li>
 <li><a class="reference internal" href="#choosing-the-thumbnail-image-from-multiple-figures">Choosing the thumbnail image from multiple figures</a></li>
+<li><a class="reference internal" href="#generate-binder-links-for-gallery-notebooks">Generate Binder links for gallery notebooks</a></li>
 <li><a class="reference internal" href="#build-the-gallery-without-executing-the-examples">Build the Gallery without executing the examples</a></li>
 <li><a class="reference internal" href="#dealing-with-failing-gallery-example-scripts">Dealing with failing Gallery example scripts</a><ul>
 <li><a class="reference internal" href="#abort-build-on-first-fail">Abort build on first fail</a></li>
