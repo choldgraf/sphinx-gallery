@@ -1,5 +1,4 @@
-setuptools
+# Requirements for the docs
 matplotlib
 pillow
-sphinx
-pytest
+seaborn
