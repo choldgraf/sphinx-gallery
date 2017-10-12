@@ -5,18 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>sphinx_gallery.downloads &#8212; Sphinx-Gallery 0.1.11-git documentation</title>
-    
+    <title>sphinx_gallery.downloads &#8212; Sphinx-Gallery 0.1.12-git documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.1.11-git',
+        VERSION:     '0.1.12-git',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -26,10 +23,10 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Gallery of Examples" href="../auto_examples/index.html" />
+    <link rel="next" title="sphinx_gallery.sorting" href="sphinx_gallery.sorting.html" />
     <link rel="prev" title="sphinx_gallery.notebook" href="sphinx_gallery.notebook.html" /> 
   </head>
   <body>
@@ -43,12 +40,12 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../auto_examples/index.html" title="Gallery of Examples"
+          <a href="sphinx_gallery.sorting.html" title="sphinx_gallery.sorting"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="sphinx_gallery.notebook.html" title="sphinx_gallery.notebook"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.11-git documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../reference.html" accesskey="U">Sphinx-Gallery API Reference</a> &#187;</li> 
       </ul>
     </div>  
@@ -73,11 +70,11 @@ gallery_dir and makes zipfiles of them</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gallery_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/string.html#module-string" title="(in Python v3.6)"><em>string</em></a>) – path of the gallery to collect downloadable sources</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gallery_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – path of the gallery to collect downloadable sources</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>download_rst</strong> – RestructuredText to include download buttons to the generated files</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/string.html#module-string" title="(in Python v3.6)">string</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></td>
 </tr>
 </tbody>
 </table>
@@ -91,7 +88,7 @@ gallery_dir and makes zipfiles of them</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/string.html#module-string" title="(in Python v3.6)"><em>string</em></a>) – path to the directory where python source file are</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – path to the directory where python source file are</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of paths to all Python source files in <cite>target_dir</cite></td>
 </tr>
@@ -103,7 +100,7 @@ gallery_dir and makes zipfiles of them</p>
 
 <div style='clear:both'></div><dl class="function">
 <dt id="sphinx_gallery.downloads.python_zip">
-<code class="descclassname">sphinx_gallery.downloads.</code><code class="descname">python_zip</code><span class="sig-paren">(</span><em>file_list</em>, <em>gallery_path</em>, <em>extension=’.py’</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.downloads.python_zip" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sphinx_gallery.downloads.</code><code class="descname">python_zip</code><span class="sig-paren">(</span><em>file_list</em>, <em>gallery_path</em>, <em>extension='.py'</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.downloads.python_zip" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stores all files in file_list into an zip file</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -111,7 +108,7 @@ gallery_dir and makes zipfiles of them</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>file_list</strong> (<em>list of strings</em>) – Holds all the file names to be included in zip file</li>
-<li><strong>gallery_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/string.html#module-string" title="(in Python v3.6)"><em>string</em></a>) – path to where the zipfile is stored</li>
+<li><strong>gallery_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – path to where the zipfile is stored</li>
 <li><strong>extension</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – ‘.py’ or ‘.ipynb’ In order to deal with downloads of python
 sources and jupyter notebooks the file extension from files in
 file_list will be removed and replace with the value of this
@@ -123,7 +120,7 @@ variable while generating the zip file</li>
 depending on the extension</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/string.html#module-string" title="(in Python v3.6)">string</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></p>
 </td>
 </tr>
 </tbody>
@@ -155,8 +152,8 @@ depending on the extension</p>
   <p class="topless"><a href="sphinx_gallery.notebook.html"
                         title="previous chapter">sphinx_gallery.notebook</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="../auto_examples/index.html"
-                        title="next chapter">Gallery of Examples</a></p>
+  <p class="topless"><a href="sphinx_gallery.sorting.html"
+                        title="next chapter">sphinx_gallery.sorting</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -188,18 +185,18 @@ depending on the extension</p>
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../auto_examples/index.html" title="Gallery of Examples"
+          <a href="sphinx_gallery.sorting.html" title="sphinx_gallery.sorting"
              >next</a> |</li>
         <li class="right" >
           <a href="sphinx_gallery.notebook.html" title="sphinx_gallery.notebook"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.11-git documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../reference.html" >Sphinx-Gallery API Reference</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2014-2017, Óscar Nájera.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.1.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
     </div>
   </body>
 </html>

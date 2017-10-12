@@ -5,18 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Welcome to Sphinx-Gallery’s documentation! &#8212; Sphinx-Gallery 0.1.11-git documentation</title>
-    
+    <title>Welcome to Sphinx-Gallery’s documentation! &#8212; Sphinx-Gallery 0.1.12-git documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
     <link rel="stylesheet" href="_static/theme_override.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.1.11-git',
+        VERSION:     '0.1.12-git',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -26,10 +23,10 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting Started to Sphinx-Gallery" href="getting_started.html" /> 
+    <link rel="next" title="Getting Started with Sphinx-Gallery" href="getting_started.html" /> 
   </head>
   <body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -42,9 +39,9 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="getting_started.html" title="Getting Started to Sphinx-Gallery"
+          <a href="getting_started.html" title="Getting Started with Sphinx-Gallery"
              accesskey="N">next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">Sphinx-Gallery 0.1.11-git documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="#">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -101,11 +98,11 @@ the scripts.</p>
 <ul class="simple">
 <li>Runs Python files and captures outputs + figures. Learn how to
 <a class="reference internal" href="getting_started.html#set-up-your-project"><span class="std std-ref">Set up your project</span></a></li>
-<li><a class="reference internal" href="advanced_configuration.html#multiple-galleries-config"><span class="std std-ref">Manage Multiple galleries</span></a> no number limit.</li>
+<li><a class="reference internal" href="advanced_configuration.html#multiple-galleries-config"><span class="std std-ref">Managing multiple galleries</span></a> no number limit.</li>
 <li>Automatically hyperlink the code in the gallery to the
 corresponding function documentation. <a class="reference internal" href="advanced_configuration.html#link-to-documentation"><span class="std std-ref">Linking to documentation</span></a></li>
 <li>Automatically links from documented functions to examples using the
-function. <a class="reference internal" href="advanced_configuration.html#references-to-examples"><span class="std std-ref">References to examples (backreferences)</span></a></li>
+function. <a class="reference internal" href="advanced_configuration.html#references-to-examples"><span class="std std-ref">Adding references to examples</span></a></li>
 <li><a class="reference internal" href="tutorials/index.html#notebook-examples"><span class="std std-ref">Notebook styled examples</span></a>: turn your scripts into a full narrative
 with the <a class="reference internal" href="syntax.html#notebook-examples-syntax"><span class="std std-ref">Notebook Styled examples syntax</span></a></li>
 </ul>
@@ -118,23 +115,31 @@ with the <a class="reference internal" href="syntax.html#notebook-examples-synta
 <h1>Contents:<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started to Sphinx-Gallery</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started with Sphinx-Gallery</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#who-uses-sphinx-gallery">Who uses Sphinx-Gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#getting-the-package">Getting the package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#set-up-your-project">Set up your project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#know-your-gallery-files">Know your Gallery files</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_configuration.html">Advanced Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#manage-multiple-galleries">Manage Multiple galleries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#list-of-config-options">List of config options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#managing-multiple-galleries">Managing multiple galleries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#building-examples-matching-a-pattern">Building examples matching a pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#sorting-gallery-subsections">Sorting gallery subsections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#sorting-gallery-examples">Sorting gallery examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#linking-to-documentation">Linking to documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#references-to-examples-backreferences">References to examples (backreferences)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#using-a-custom-default-thumbnail-image">Using a custom default thumbnail image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#choosing-the-thumbnail-image-from-multiple-figures">Choosing the thumbnail image from multiple figures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#adding-references-to-examples">Adding references to examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#using-a-custom-default-thumbnail">Using a custom default thumbnail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#adding-line-numbers-to-examples">Adding line numbers to examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#disabling-joint-download-of-scripts">Disabling joint download of scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#choosing-the-thumbnail-image">Choosing the thumbnail image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#generate-binder-links-for-gallery-notebooks">Generate Binder links for gallery notebooks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#build-the-gallery-without-executing-the-examples">Build the Gallery without executing the examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#building-without-executing-examples">Building without executing examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#finding-mayavi-figures">Finding Mayavi figures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#dealing-with-failing-gallery-example-scripts">Dealing with failing Gallery example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#setting-gallery-thumbnail-size">Setting gallery thumbnail size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_configuration.html#minimal-reported-time">Minimal reported time</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
@@ -152,6 +157,7 @@ with the <a class="reference internal" href="syntax.html#notebook-examples-synta
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference.html">Sphinx-Gallery API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference.html#sphinx-gallery">Sphinx Gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.gen_gallery.html">sphinx_gallery.gen_gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.backreferences.html">sphinx_gallery.backreferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.gen_rst.html">sphinx_gallery.gen_rst</a></li>
@@ -160,19 +166,23 @@ with the <a class="reference internal" href="syntax.html#notebook-examples-synta
 <li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.notebook.html">sphinx_gallery.notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.downloads.html">sphinx_gallery.downloads</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.docs_resolv.html">sphinx_gallery.docs_resolv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gen_modules/sphinx_gallery.sorting.html">sphinx_gallery.sorting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="auto_examples/index.html">Gallery of Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="auto_examples/index.html#general-examples">General examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_examples/index.html#the-sin-function">The sin function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_examples/index.html#examples-which-don-t-produce-image-output">Examples which don’t produce image output</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Secondary gallery</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorials/index.html#notebook-styled-examples">Notebook styled examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/index.html#seaborn-notebooks">Seaborn notebooks</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="changes.html#git-master">git master</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#v0-1-12">v0.1.12</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changes.html#v0-1-11">v0.1.11</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changes.html#v0-1-10">v0.1.10</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changes.html#v0-1-9">v0.1.9</a></li>
@@ -226,7 +236,7 @@ with the <a class="reference internal" href="syntax.html#notebook-examples-synta
 
   <h4>Next topic</h4>
   <p class="topless"><a href="getting_started.html"
-                        title="next chapter">Getting Started to Sphinx-Gallery</a></p>
+                        title="next chapter">Getting Started with Sphinx-Gallery</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -258,14 +268,14 @@ with the <a class="reference internal" href="syntax.html#notebook-examples-synta
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="getting_started.html" title="Getting Started to Sphinx-Gallery"
+          <a href="getting_started.html" title="Getting Started with Sphinx-Gallery"
              >next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">Sphinx-Gallery 0.1.11-git documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="#">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2014-2017, Óscar Nájera.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.1.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
     </div>
   </body>
 </html>

@@ -5,18 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>sphinx_gallery.docs_resolv &#8212; Sphinx-Gallery 0.1.11-git documentation</title>
-    
+    <title>sphinx_gallery.docs_resolv &#8212; Sphinx-Gallery 0.1.12-git documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.1.11-git',
+        VERSION:     '0.1.12-git',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -26,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="sphinx_gallery.notebook" href="sphinx_gallery.notebook.html" />
@@ -48,7 +45,7 @@
         <li class="right" >
           <a href="sphinx_gallery.py_source_parser.html" title="sphinx_gallery.py_source_parser"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.11-git documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../reference.html" accesskey="U">Sphinx-Gallery API Reference</a> &#187;</li> 
       </ul>
     </div>  
@@ -70,43 +67,18 @@
 <dd><p>Embed hyperlinks to documentation into example code</p>
 </dd></dl>
 
-<div style='clear:both'></div><dl class="function">
-<dt id="sphinx_gallery.docs_resolv.fuchsia">
-<code class="descclassname">sphinx_gallery.docs_resolv.</code><code class="descname">fuchsia</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.fuchsia" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<div style='clear:both'></div><dl class="function">
+<div style='clear:both'></div><div style='clear:both'></div><dl class="function">
 <dt id="sphinx_gallery.docs_resolv.get_data">
 <code class="descclassname">sphinx_gallery.docs_resolv.</code><code class="descname">get_data</code><span class="sig-paren">(</span><em>url</em>, <em>gallery_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.get_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Persistent dictionary usage to retrieve the search indexes</p>
 </dd></dl>
 
-<div style='clear:both'></div><dl class="function">
-<dt id="sphinx_gallery.docs_resolv.parse_sphinx_searchindex">
-<code class="descclassname">sphinx_gallery.docs_resolv.</code><code class="descname">parse_sphinx_searchindex</code><span class="sig-paren">(</span><em>searchindex</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.parse_sphinx_searchindex" title="Permalink to this definition">¶</a></dt>
-<dd><p>Parse a Sphinx search index</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>searchindex</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – The Sphinx search index (contents of searchindex.js)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
-<li><strong>filenames</strong> (<em>list of str</em>) – The file names parsed from the search index.</li>
-<li><strong>objects</strong> (<em>dict</em>) – The objects parsed from the search index.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<div style='clear:both'></div></div>
+<div style='clear:both'></div><div style='clear:both'></div></div>
 <div class="section" id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="sphinx_gallery.docs_resolv.SphinxDocLinkResolver">
-<em class="property">class </em><code class="descclassname">sphinx_gallery.docs_resolv.</code><code class="descname">SphinxDocLinkResolver</code><span class="sig-paren">(</span><em>doc_url</em>, <em>gallery_dir</em>, <em>searchindex=’searchindex.js’</em>, <em>extra_modules_test=None</em>, <em>relative=False</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.SphinxDocLinkResolver" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sphinx_gallery.docs_resolv.</code><code class="descname">SphinxDocLinkResolver</code><span class="sig-paren">(</span><em>doc_url</em>, <em>gallery_dir</em>, <em>relative=False</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.SphinxDocLinkResolver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resolve documentation links using searchindex.js generated by Sphinx</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -114,8 +86,6 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>doc_url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – The base URL of the project website.</li>
-<li><strong>searchindex</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – Filename of searchindex, relative to doc_url.</li>
-<li><strong>extra_modules_test</strong> (<em>list of str</em>) – List of extra module names to test.</li>
 <li><strong>relative</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)"><em>bool</em></a>) – Return relative links (only useful for links to documentation of this
 package).</li>
 </ul>
@@ -150,98 +120,6 @@ cobj[‘module’] : module name (str)</li>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="sphinx_gallery.docs_resolv.StringIO">
-<em class="property">class </em><code class="descclassname">sphinx_gallery.docs_resolv.</code><code class="descname">StringIO</code><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO" title="Permalink to this definition">¶</a></dt>
-<dd><p>Text I/O implementation using an in-memory buffer.</p>
-<p>The initial_value argument sets the value of object.  The newline
-argument is like the one of TextIOWrapper’s constructor.</p>
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.close">
-<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.close" title="Permalink to this definition">¶</a></dt>
-<dd><p>Close the IO object.</p>
-<p>Attempting any further operation after the object is closed
-will raise a ValueError.</p>
-<p>This method has no effect if the file is already closed.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.getvalue">
-<code class="descname">getvalue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.getvalue" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve the entire contents of the object.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.read">
-<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.read" title="Permalink to this definition">¶</a></dt>
-<dd><p>Read at most size characters, returned as a string.</p>
-<p>If the argument is negative or omitted, read until EOF
-is reached. Return an empty string at EOF.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.readable">
-<code class="descname">readable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.readable" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns True if the IO object can be read.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.readline">
-<code class="descname">readline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.readline" title="Permalink to this definition">¶</a></dt>
-<dd><p>Read until newline or EOF.</p>
-<p>Returns an empty string if EOF is hit immediately.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.seek">
-<code class="descname">seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.seek" title="Permalink to this definition">¶</a></dt>
-<dd><p>Change stream position.</p>
-<dl class="docutils">
-<dt>Seek to character offset pos relative to position indicated by whence:</dt>
-<dd>0  Start of stream (the default).  pos should be &gt;= 0;
-1  Current position - pos must be 0;
-2  End of stream - pos must be 0.</dd>
-</dl>
-<p>Returns the new absolute position.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.seekable">
-<code class="descname">seekable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.seekable" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns True if the IO object can be seeked.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.tell">
-<code class="descname">tell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.tell" title="Permalink to this definition">¶</a></dt>
-<dd><p>Tell the current file position.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.truncate">
-<code class="descname">truncate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.truncate" title="Permalink to this definition">¶</a></dt>
-<dd><p>Truncate size to pos.</p>
-<p>The pos argument defaults to the current file position, as
-returned by tell().  The current file position is unchanged.
-Returns the new absolute position.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.writable">
-<code class="descname">writable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.writable" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns True if the IO object can be written.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sphinx_gallery.docs_resolv.StringIO.write">
-<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.docs_resolv.StringIO.write" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write string to file.</p>
-<p>Returns the number of characters written, which is always equal to
-the length of the string.</p>
 </dd></dl>
 
 </dd></dl>
@@ -328,13 +206,13 @@ the length of the string.</p>
         <li class="right" >
           <a href="sphinx_gallery.py_source_parser.html" title="sphinx_gallery.py_source_parser"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.11-git documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../reference.html" >Sphinx-Gallery API Reference</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2014-2017, Óscar Nájera.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.1.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
     </div>
   </body>
 </html>
