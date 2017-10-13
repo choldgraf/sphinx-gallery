@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Configuration &#8212; Sphinx-Gallery 0.1.12-git documentation</title>
+    <title>Configuration &#8212; Sphinx-Gallery 0.1.13-git documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
@@ -13,7 +13,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.1.12-git',
+        VERSION:     '0.1.13-git',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -45,7 +45,7 @@
         <li class="right" >
           <a href="getting_started.html" title="Getting Started with Sphinx-Gallery"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Sphinx-Gallery 0.1.13-git documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -557,13 +557,13 @@ dictionary following the pattern below:</p>
      <span class="s1">&#39;repo&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;github_repo&gt;&#39;</span><span class="p">,</span>
      <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;binder_url&gt;&#39;</span><span class="p">,</span>  <span class="c1"># URL serving binders (e.g. mybinder.org)</span>
      <span class="s1">&#39;branch&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;repo_branch&gt;&#39;</span><span class="p">,</span>  <span class="c1"># Can also be a tag or commit hash</span>
-     <span class="s1">&#39;dependencies&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;path_to_dependencies&gt;&#39;</span>  <span class="c1"># Either `requirements.txt` or `environment.yml`</span>
+     <span class="s1">&#39;dependencies&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;list_of_paths_to_dependency_files&gt;&#39;</span>  <span class="c1"># Dependency files Binder will use to build the environment. See docs.mybinder.org for details.</span>
      <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>See the Sphinx-Gallery configuration with Binder for an example that uses
-the <a class="reference external" href="http://beta.mybinder.org">public Binder servers</a>.</p>
+<p>See the Sphinx-Gallery <a class="reference external" href="https://github.com/sphinx-gallery/sphinx-gallery/blob/master/doc/conf.py">Sphinx configuration file</a>
+for an example that uses the <a class="reference external" href="http://beta.mybinder.org">public Binder server</a>.</p>
 </div>
 <div class="section" id="building-without-executing-examples">
 <span id="without-execution"></span><h2>Building without executing examples<a class="headerlink" href="#building-without-executing-examples" title="Permalink to this headline">¶</a></h2>
@@ -586,7 +586,7 @@ and not spaces.</p>
 a default:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sphinx_gallery_conf</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
-    <span class="s1">&#39;plot_gallery&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;plot_gallery&#39;</span><span class="p">:</span> <span class="s1">&#39;False&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -791,7 +791,7 @@ embedded in the html output.</p>
         <li class="right" >
           <a href="getting_started.html" title="Getting Started with Sphinx-Gallery"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Sphinx-Gallery 0.1.12-git documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Sphinx-Gallery 0.1.13-git documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

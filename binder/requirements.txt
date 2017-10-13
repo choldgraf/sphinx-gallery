@@ -1,0 +1,5 @@
+# Requirements for the documentation.
+# These are extra dependencies that aren't required to use sphinx-gallery.
+matplotlib
+pillow
+seaborn
