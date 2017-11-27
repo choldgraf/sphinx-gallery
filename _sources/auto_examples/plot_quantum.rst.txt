@@ -80,10 +80,10 @@ found. Introducing a new variable :math:`\xi = \epsilon - \mu`, and
     plt.legend(loc=0)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.045 seconds)
+**Total running time of the script:** ( 0 minutes  0.078 seconds)
 
 .. figure:: http://mybinder.org/badge.svg
-      :target: https://beta.mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_quantum.ipynb
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_quantum.ipynb
       :width: 150 px
       :figclass: binder-badge
 
