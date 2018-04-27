@@ -1,4 +1,8 @@
+.. note::
+    :class: sphx-glr-download-link-note
 
+    Click :ref:`here <sphx_glr_download_auto_examples_sin_func_plot_sin.py>` to download the full example code or run this example in your browser via Binder
+.. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_auto_examples_sin_func_plot_sin.py:
 
@@ -31,7 +35,7 @@ including from other examples, as here
 
 
 .. image:: /auto_examples/sin_func/images/sphx_glr_plot_sin_001.png
-    :align: center
+    :class: sphx-glr-single-img
 
 
 
@@ -54,18 +58,23 @@ including from other examples, as here
     plt.ylabel('$\sin(x)$')
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.072 seconds)
+**Total running time of the script:** ( 0 minutes  0.215 seconds)
 
-.. figure:: http://mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_sin.ipynb
-      :width: 150 px
-      :figclass: binder-badge
 
+.. _sphx_glr_download_auto_examples_sin_func_plot_sin.py:
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/sin_func/plot_sin.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

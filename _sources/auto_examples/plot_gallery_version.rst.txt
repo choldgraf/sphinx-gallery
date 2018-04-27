@@ -1,4 +1,8 @@
+.. note::
+    :class: sphx-glr-download-link-note
 
+    Click :ref:`here <sphx_glr_download_auto_examples_plot_gallery_version.py>` to download the full example code or run this example in your browser via Binder
+.. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_auto_examples_plot_gallery_version.py:
 
@@ -13,7 +17,7 @@ version.
 
 
 .. image:: /auto_examples/images/sphx_glr_plot_gallery_version_001.png
-    :align: center
+    :class: sphx-glr-single-img
 
 
 
@@ -66,18 +70,23 @@ version.
 
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.077 seconds)
+**Total running time of the script:** ( 0 minutes  0.109 seconds)
 
-.. figure:: http://mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_gallery_version.ipynb
-      :width: 150 px
-      :figclass: binder-badge
 
+.. _sphx_glr_download_auto_examples_plot_gallery_version.py:
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/plot_gallery_version.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

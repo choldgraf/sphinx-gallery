@@ -4,22 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Some Quantum Mechanics, filling an atomic orbital &#8212; Sphinx-Gallery 0.1.13-git documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.1.13-git',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
@@ -28,8 +20,7 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Seaborn example" href="plot_seaborn.html" />
     <link rel="prev" title="Colormaps alter your perception" href="plot_colors.html" /> 
-  </head>
-  <body>
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -55,48 +46,52 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="some-quantum-mechanics-filling-an-atomic-orbital">
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Click <a class="reference internal" href="#sphx-glr-download-auto-examples-plot-quantum-py"><span class="std std-ref">here</span></a> to download the full example code or run this example in your browser via Binder</p>
+</div>
+<div class="sphx-glr-example-title section" id="some-quantum-mechanics-filling-an-atomic-orbital">
 <span id="sphx-glr-auto-examples-plot-quantum-py"></span><h1>Some Quantum Mechanics, filling an atomic orbital<a class="headerlink" href="#some-quantum-mechanics-filling-an-atomic-orbital" title="Permalink to this headline">¶</a></h1>
 <p>Considering an atomic single orbital and how to fill it by use of the
-chemical potential. This system has a four element basis, <span class="math">\(B =
+chemical potential. This system has a four element basis, <span class="math notranslate">\(B =
 \{ \lvert \emptyset \rangle, \lvert \uparrow \rangle, \lvert
 \downarrow \rangle, \lvert \uparrow\downarrow \rangle \}\)</span>, that is the
 empty orbital, one spin up electron, one spin down electron and the
 filled orbital.</p>
 <p>The environment of the orbital is set up by an energy cost for
-occupying the orbital, that is <span class="math">\(\epsilon\)</span> and when both
+occupying the orbital, that is <span class="math notranslate">\(\epsilon\)</span> and when both
 electrons meet a contact interaction corresponding to the Coulomb
-repulsion <span class="math">\(U\)</span>. Finally the chemical potential <span class="math">\(\mu\)</span> is
+repulsion <span class="math notranslate">\(U\)</span>. Finally the chemical potential <span class="math notranslate">\(\mu\)</span> is
 what allows in the Grand canonical picture, to fill up our atomic
 orbital from a reservoir of electrons.</p>
 <blockquote>
 <div>The the simple Hamiltonian to model this system is given by:</div></blockquote>
-<div class="math">
+<div class="math notranslate">
 \[\mathcal{H} =
      \sum_{\sigma=\uparrow,\downarrow} \epsilon c^\dagger_\sigma c_\sigma
     + Un_\uparrow n_\downarrow - \mu \hat{N}\]</div>
-<p>Here <span class="math">\(c^\dagger,c\)</span> creation and annihilation operators,
-<span class="math">\(n=c^\dagger c\)</span>, and
-<span class="math">\(\hat{N}=n_\uparrow+n_\downarrow\)</span>. This Hamiltonian is diagonal
+<p>Here <span class="math notranslate">\(c^\dagger,c\)</span> creation and annihilation operators,
+<span class="math notranslate">\(n=c^\dagger c\)</span>, and
+<span class="math notranslate">\(\hat{N}=n_\uparrow+n_\downarrow\)</span>. This Hamiltonian is diagonal
 in the basis of particle number we have chosen earlier, as the basis
 elements are also eigenvectors.</p>
-<div class="math">
+<div class="math notranslate">
 \[\begin{split}\mathcal{H} \lvert \emptyset \rangle &amp;= 0 \\
 \mathcal{H} \lvert \uparrow  \rangle &amp;= (\epsilon - \mu) | \uparrow  \rangle \\
 \mathcal{H} \lvert \downarrow  \rangle &amp;= (\epsilon - \mu) | \downarrow  \rangle \\
 \mathcal{H} \lvert \uparrow\downarrow \rangle &amp;= (2\epsilon - 2\mu +U) \lvert \uparrow\downarrow \rangle\end{split}\]</div>
 <p>It is easy to see, that the system will prefer to be empty if
-<span class="math">\(\mu \in [0,\epsilon)\)</span>, be single occupied if <span class="math">\(\mu \in (\epsilon, \epsilon +U)\)</span>
-and doubly occupied if <span class="math">\(\mu &gt; \epsilon +U\)</span>.</p>
+<span class="math notranslate">\(\mu \in [0,\epsilon)\)</span>, be single occupied if <span class="math notranslate">\(\mu \in (\epsilon, \epsilon +U)\)</span>
+and doubly occupied if <span class="math notranslate">\(\mu &gt; \epsilon +U\)</span>.</p>
 <p>For a more rigorous treatment, the partition function has to be
 calculated and then the expected particle number can be
-found. Introducing a new variable <span class="math">\(\xi = \epsilon - \mu\)</span>, and
-<span class="math">\(\beta\)</span> corresponding to the inverse temperature of the system.</p>
-<div class="math">
+found. Introducing a new variable <span class="math notranslate">\(\xi = \epsilon - \mu\)</span>, and
+<span class="math notranslate">\(\beta\)</span> corresponding to the inverse temperature of the system.</p>
+<div class="math notranslate">
 \[\begin{split}\mathcal{Z} &amp;= Tr(e^{-\beta \mathcal{H}}) = 1 + 2e^{-\beta\xi} + e^{-\beta(2\xi + U)} \\
 \langle \hat{N} \rangle &amp;= \frac{1}{\beta} \frac{\partial}{\partial \mu} \ln \mathcal{Z}\end{split}\]</div>
-<img alt="../_images/sphx_glr_plot_quantum_001.png" class="align-center" src="../_images/sphx_glr_plot_quantum_001.png" />
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Code source: Óscar Nájera</span>
+<img alt="../_images/sphx_glr_plot_quantum_001.png" class="sphx-glr-single-img" src="../_images/sphx_glr_plot_quantum_001.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code source: Óscar Nájera</span>
 <span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
@@ -112,15 +107,15 @@ found. Introducing a new variable <span class="math">\(\xi = \epsilon - \mu\)</s
 <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="View documentation for matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.078 seconds)</p>
-<div class="binder-badge figure">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_quantum.ipynb"><img alt="http://mybinder.org/badge.svg" src="http://mybinder.org/badge.svg" width="150px" /></a>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.097 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-quantum-py">
+<div class="binder-badge docutils container">
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/plot_quantum.ipynb"><img alt="https://static.mybinder.org/badge.svg" src="https://static.mybinder.org/badge.svg" width="150px" /></a>
 </div>
-<div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
-<a class="reference download internal" href="../_downloads/plot_quantum.py" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_quantum.py</span></code></a></div>
+<a class="reference download internal" href="../_downloads/plot_quantum.py" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_quantum.py</span></code></a></div>
 <div class="sphx-glr-download docutils container">
-<a class="reference download internal" href="../_downloads/plot_quantum.ipynb" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_quantum.ipynb</span></code></a></div>
+<a class="reference download internal" href="../_downloads/plot_quantum.ipynb" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_quantum.ipynb</span></code></a></div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Gallery generated by Sphinx-Gallery</a></p>
 </div>
@@ -146,12 +141,14 @@ found. Introducing a new variable <span class="math">\(\xi = \epsilon - \mu\)</s
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -178,8 +175,8 @@ found. Introducing a new variable <span class="math">\(\xi = \epsilon - \mu\)</s
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2014-2017, Óscar Nájera.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+        &#169; Copyright 2014-2018, Óscar Nájera.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
     </div>
   </body>
 </html>

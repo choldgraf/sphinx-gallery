@@ -1,4 +1,8 @@
+.. note::
+    :class: sphx-glr-download-link-note
 
+    Click :ref:`here <sphx_glr_download_auto_examples_plot_quantum.py>` to download the full example code or run this example in your browser via Binder
+.. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_auto_examples_plot_quantum.py:
 
@@ -56,7 +60,7 @@ found. Introducing a new variable :math:`\xi = \epsilon - \mu`, and
 
 
 .. image:: /auto_examples/images/sphx_glr_plot_quantum_001.png
-    :align: center
+    :class: sphx-glr-single-img
 
 
 
@@ -80,18 +84,23 @@ found. Introducing a new variable :math:`\xi = \epsilon - \mu`, and
     plt.legend(loc=0)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.078 seconds)
+**Total running time of the script:** ( 0 minutes  0.097 seconds)
 
-.. figure:: http://mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_quantum.ipynb
-      :width: 150 px
-      :figclass: binder-badge
 
+.. _sphx_glr_download_auto_examples_plot_quantum.py:
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/plot_quantum.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

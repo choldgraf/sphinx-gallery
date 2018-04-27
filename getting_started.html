@@ -4,22 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Getting Started with Sphinx-Gallery &#8212; Sphinx-Gallery 0.1.13-git documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
     <link rel="stylesheet" href="_static/theme_override.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.1.13-git',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
@@ -28,8 +20,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Configuration" href="advanced_configuration.html" />
     <link rel="prev" title="Welcome to Sphinx-Gallery’s documentation!" href="index.html" /> 
-  </head>
-  <body>
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -79,12 +70,14 @@ independent general purpose extension.</p>
 <li><a class="reference external" href="http://docs.sunpy.org/en/stable/generated/gallery/index.html">SunPy</a></li>
 <li><a class="reference external" href="https://pysurfer.github.io/">PySurfer</a></li>
 <li><a class="reference external" href="https://matplotlib.org/index.html">Matplotlib</a> <a class="reference external" href="https://matplotlib.org/gallery/index.html">Examples</a> and <a class="reference external" href="https://matplotlib.org/tutorials/index.html">Tutorials</a></li>
+<li><a class="reference external" href="http://pytorch.org/tutorials">PyTorch tutorials</a></li>
+<li><a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest/gallery/">Cartopy</a></li>
 </ul>
 </div>
 <div class="section" id="getting-the-package">
 <h2>Getting the package<a class="headerlink" href="#getting-the-package" title="Permalink to this headline">¶</a></h2>
 <p>You can do a direct install via pip by using:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install sphinx-gallery
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx-gallery
 </pre></div>
 </div>
 <p>Sphinx-Gallery will not manage its dependencies when installing, thus
@@ -103,10 +96,10 @@ are:</p>
 <div class="section" id="install-as-developer">
 <h3>Install as developer<a class="headerlink" href="#install-as-developer" title="Permalink to this headline">¶</a></h3>
 <p>You can get the latest development source from our <a class="reference external" href="https://github.com/sphinx-gallery/sphinx-gallery">Github repository</a>. You need
-<code class="docutils literal"><span class="pre">setuptools</span></code> installed in your system to install Sphinx-Gallery.</p>
+<code class="docutils literal notranslate"><span class="pre">setuptools</span></code> installed in your system to install Sphinx-Gallery.</p>
 <p>You will also need to install the dependencies listed above and <cite>pytest</cite></p>
 <p>To install everything do:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git clone https://github.com/sphinx-gallery/sphinx-gallery
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/sphinx-gallery/sphinx-gallery
 $ <span class="nb">cd</span> sphinx-gallery
 $ pip install -r requirements.txt
 $ python setup.py develop
@@ -123,7 +116,7 @@ documentation:</p>
 <div class="section" id="set-up-your-project">
 <span id="id1"></span><h2>Set up your project<a class="headerlink" href="#set-up-your-project" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say your Python project looks like this:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>.
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
 ├── doc
 │   ├── conf.py
 │   ├── index.rst
@@ -137,47 +130,48 @@ documentation:</p>
     └── README.txt
 </pre></div>
 </div>
-<p>Your Python module is on <code class="docutils literal"><span class="pre">py_module</span></code>, examples on how to use it are
-in <code class="docutils literal"><span class="pre">examples</span></code> and the <code class="docutils literal"><span class="pre">doc</span></code> folder hold the base documentation
-structure you get from executing <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code>.</p>
+<p>Your Python module is on <code class="docutils literal notranslate"><span class="pre">py_module</span></code>, examples on how to use it are
+in <code class="docutils literal notranslate"><span class="pre">examples</span></code> and the <code class="docutils literal notranslate"><span class="pre">doc</span></code> folder hold the base documentation
+structure you get from executing <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code>.</p>
 <p>To get Sphinx-Gallery into your project we have to extend the Sphinx
-<code class="docutils literal"><span class="pre">doc/conf.py</span></code> file with:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+<code class="docutils literal notranslate"><span class="pre">doc/conf.py</span></code> file with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
     <span class="o">...</span>
     <span class="s1">&#39;sphinx_gallery.gen_gallery&#39;</span><span class="p">,</span>
     <span class="p">]</span>
 </pre></div>
 </div>
 <p>This is to load Sphinx-Gallery as one of your extensions, the ellipsis
-<code class="docutils literal"><span class="pre">...</span></code> is to represent your other loaded extensions.</p>
+<code class="docutils literal notranslate"><span class="pre">...</span></code> is to represent your other loaded extensions.</p>
 <p>Now to declare your project structure, we add a configuration
-dictionary for Sphinx-Gallery. The examples directory <code class="docutils literal"><span class="pre">../examples</span></code>
-is declared with a relative path from the <code class="docutils literal"><span class="pre">conf.py</span></code> file location:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sphinx_gallery_conf</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="c1"># path to your examples scripts</span>
-    <span class="s1">&#39;examples_dirs&#39;</span> <span class="p">:</span> <span class="s1">&#39;../examples&#39;</span><span class="p">,</span>
-    <span class="c1"># path where to save gallery generated examples</span>
-    <span class="s1">&#39;gallery_dirs&#39;</span>  <span class="p">:</span> <span class="s1">&#39;auto_examples&#39;</span><span class="p">}</span>
+dictionary for Sphinx-Gallery. The examples directory <code class="docutils literal notranslate"><span class="pre">../examples</span></code>
+is declared with a relative path from the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file location:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx_gallery_conf</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="c1"># path to your examples scripts</span>
+     <span class="s1">&#39;examples_dirs&#39;</span><span class="p">:</span> <span class="s1">&#39;../examples&#39;</span><span class="p">,</span>
+     <span class="c1"># path where to save gallery generated examples</span>
+     <span class="s1">&#39;gallery_dirs&#39;</span><span class="p">:</span> <span class="s1">&#39;auto_examples&#39;</span><span class="p">,</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">gallery_dirs</span></code> is the folder where Sphinx-Gallery will store the
+<p>The <code class="docutils literal notranslate"><span class="pre">gallery_dirs</span></code> is the folder where Sphinx-Gallery will store the
 converted Python scripts into rst files that Sphinx will process into
 HTML.</p>
 <div class="section" id="the-structure-of-the-examples-folder">
 <h3>The structure of the examples folder<a class="headerlink" href="#the-structure-of-the-examples-folder" title="Permalink to this headline">¶</a></h3>
 <p>There are some extra instructions on how to present your examples to Sphinx-Gallery.</p>
 <ul class="simple">
-<li>A mandatory <code class="docutils literal"><span class="pre">README.txt</span></code> file with rst syntax to introduce your gallery</li>
-<li><code class="docutils literal"><span class="pre">plot_examples.py</span></code> files: Python scripts that have to be executed
+<li>A mandatory <code class="docutils literal notranslate"><span class="pre">README.txt</span></code> file with rst syntax to introduce your gallery</li>
+<li><code class="docutils literal notranslate"><span class="pre">plot_examples.py</span></code> files: Python scripts that have to be executed
 and output a plot that will be presented in your gallery</li>
-<li><code class="docutils literal"><span class="pre">examples.py</span></code> files: Python scripts that will not be executed but will
+<li><code class="docutils literal notranslate"><span class="pre">examples.py</span></code> files: Python scripts that will not be executed but will
 be presented in the gallery</li>
 </ul>
 <p>All the Python scripts in the examples folder need to have a docstring. Written
 in rst syntax as it is used in the generated file for the example gallery.</p>
-<p>You can have sub-folders in your <code class="docutils literal"><span class="pre">examples</span></code> directory, those will be
+<p>You can have sub-folders in your <code class="docutils literal notranslate"><span class="pre">examples</span></code> directory, those will be
 processed by the gallery extension and presented in the gallery, as long as
-they also have a <code class="docutils literal"><span class="pre">README.txt</span></code> file. Sub-folders have to respect the same
+they also have a <code class="docutils literal notranslate"><span class="pre">README.txt</span></code> file. Sub-folders have to respect the same
 structure examples folder.</p>
 <p>If these instructions are not clear enough, this package uses itself, to generated
 its own example gallery. So check the directory structure and the contents of the
@@ -185,16 +179,16 @@ files.</p>
 </div>
 <div class="section" id="building-the-documentation-locally">
 <h3>Building the documentation locally<a class="headerlink" href="#building-the-documentation-locally" title="Permalink to this headline">¶</a></h3>
-<p>In your sphinx documentation directory, <code class="docutils literal"><span class="pre">doc</span></code> execute:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ make html
+<p>In your sphinx documentation directory, <code class="docutils literal notranslate"><span class="pre">doc</span></code> execute:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ make html
 </pre></div>
 </div>
 <p>This will start the build of your complete documentation including the examples
-gallery. Once documentation is build, our extension will have generated an <code class="docutils literal"><span class="pre">auto_examples</span></code>
+gallery. Once documentation is build, our extension will have generated an <code class="docutils literal notranslate"><span class="pre">auto_examples</span></code>
 directory and populated it with rst files containing the gallery and each example.
 Sphinx gives this files its regular processing and you can enjoy your
 generated gallery under the same path. That means you will find the gallery in the path:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>_build/html/auto_examples/index.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>_build/html/auto_examples/index.html
 </pre></div>
 </div>
 <p>that you can open under your favorite browser.</p>
@@ -208,8 +202,8 @@ md5sum) are built again.</p>
 <h3>Extending your Makefile<a class="headerlink" href="#extending-your-makefile" title="Permalink to this headline">¶</a></h3>
 <p>Once your gallery is working you might need remove completely all generated files by
 sphinx-gallery to have a clean build, or you might want to build the gallery without
-running the examples files. For this you need to extend your <code class="docutils literal"><span class="pre">Makefile</span></code> with:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>clean:
+running the examples files. For this you need to extend your <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clean:
         rm -rf <span class="k">$(</span>BUILDDIR<span class="k">)</span>/*
         rm -rf auto_examples/
 
@@ -219,7 +213,7 @@ html-noplot:
         @echo <span class="s2">&quot;Build finished. The HTML pages are in </span><span class="k">$(</span>BUILDDIR<span class="k">)</span><span class="s2">/html.&quot;</span>
 </pre></div>
 </div>
-<p>Remember that for <code class="docutils literal"><span class="pre">Makefile</span></code> white space is significant and the indentation are tabs
+<p>Remember that for <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> white space is significant and the indentation are tabs
 and not spaces</p>
 </div>
 </div>
@@ -228,18 +222,18 @@ and not spaces</p>
 <p>The Gallery has been built, now you and all of your project’s users
 can already start enjoying it. All the temporary files needed to
 generate the gallery(rst files, images, chache objects, etc) are
-stored where you configured in <code class="docutils literal"><span class="pre">gallery_dirs</span></code>. The final files that go
+stored where you configured in <code class="docutils literal notranslate"><span class="pre">gallery_dirs</span></code>. The final files that go
 into the HTML version of your documentation have a particular
 namespace, to avoid colisions with your own files and images.</p>
-<p>Our namespace convention is to prefix everything with <code class="docutils literal"><span class="pre">sphx_glr</span></code> and
+<p>Our namespace convention is to prefix everything with <code class="docutils literal notranslate"><span class="pre">sphx_glr</span></code> and
 change path separators with underscores. This is valid for
 cross-references labels, and images.</p>
 <p>So for example if we want to reference the example
 <a class="reference internal" href="auto_examples/plot_gallery_version.html#sphx-glr-auto-examples-plot-gallery-version-py"><span class="std std-ref">Sphinx-Gallery introduction</span></a>, we just call
 its reference
-<code class="docutils literal"><span class="pre">:ref:`sphx_glr_auto_examples_plot_gallery_version.py`</span></code>. The image
-it generated has the name <code class="docutils literal"><span class="pre">sphx_glr_plot_gallery_version_thumb.png</span></code>
-and its thumbnail is <code class="docutils literal"><span class="pre">sphx_glr_plot_gallery_version_thumb.png</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">:ref:`sphx_glr_auto_examples_plot_gallery_version.py`</span></code>. The image
+it generated has the name <code class="docutils literal notranslate"><span class="pre">sphx_glr_plot_gallery_version_thumb.png</span></code>
+and its thumbnail is <code class="docutils literal notranslate"><span class="pre">sphx_glr_plot_gallery_version_thumb.png</span></code></p>
 </div>
 </div>
 
@@ -283,12 +277,14 @@ and its thumbnail is <code class="docutils literal"><span class="pre">sphx_glr_p
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -314,8 +310,8 @@ and its thumbnail is <code class="docutils literal"><span class="pre">sphx_glr_p
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2014-2017, Óscar Nájera.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+        &#169; Copyright 2014-2018, Óscar Nájera.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
     </div>
   </body>
 </html>

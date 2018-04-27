@@ -1,0 +1,210 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>sphinx_gallery.binder &#8212; Sphinx-Gallery 0.1.13-git documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Gallery of Examples" href="../auto_examples/index.html" />
+    <link rel="prev" title="sphinx_gallery.sorting" href="sphinx_gallery.sorting.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../auto_examples/index.html" title="Gallery of Examples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sphinx_gallery.sorting.html" title="sphinx_gallery.sorting"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.13-git documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../reference.html" accesskey="U">Sphinx-Gallery API Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sphinx_gallery.binder">
+<span id="sphinx-gallery-binder"></span><h1>sphinx_gallery.binder<a class="headerlink" href="#module-sphinx_gallery.binder" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="binder-utility-functions">
+<h2>Binder utility functions<a class="headerlink" href="#binder-utility-functions" title="Permalink to this headline">¶</a></h2>
+<p>Integration with Binder is on an experimental stage. Note that this API may
+change in the future.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Binder is still beta technology, so there may be instability in the
+experience of users who click Binder links.</p>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="sphinx_gallery.binder.check_binder_conf">
+<code class="descclassname">sphinx_gallery.binder.</code><code class="descname">check_binder_conf</code><span class="sig-paren">(</span><em>binder_conf</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.binder.check_binder_conf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check to make sure that the Binder configuration is correct.</p>
+</dd></dl>
+
+<div style='clear:both'></div><dl class="function">
+<dt id="sphinx_gallery.binder.copy_binder_reqs">
+<code class="descclassname">sphinx_gallery.binder.</code><code class="descname">copy_binder_reqs</code><span class="sig-paren">(</span><em>app</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.binder.copy_binder_reqs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy Binder requirements files to a “binder” folder in the docs.</p>
+</dd></dl>
+
+<div style='clear:both'></div><dl class="function">
+<dt id="sphinx_gallery.binder.gen_binder_rst">
+<code class="descclassname">sphinx_gallery.binder.</code><code class="descname">gen_binder_rst</code><span class="sig-paren">(</span><em>fname</em>, <em>binder_conf</em>, <em>gallery_conf</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.binder.gen_binder_rst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the RST + link for the Binder badge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – The path to the <cite>.py</cite> file for which a Binder badge will be generated.</li>
+<li><strong>binder_conf</strong> (<em>dict | None</em>) – <p>If a dictionary it must have the following keys:</p>
+<dl class="docutils">
+<dt>’url’: The URL of the BinderHub instance that’s running a Binder</dt>
+<dd>service.</dd>
+<dt>’org’: The GitHub organization to which the documentation will be</dt>
+<dd>pushed.</dd>
+<dt>’repo’: The GitHub repository to which the documentation will be</dt>
+<dd>pushed.</dd>
+<dt>’branch’: The Git branch on which the documentation exists (e.g.,</dt>
+<dd>gh-pages).</dd>
+<dt>’dependencies’: A list of paths to dependency files that match the</dt>
+<dd>Binderspec.</dd>
+</dl>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>rst</strong> – The reStructuredText for the Binder badge that links to this file.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div style='clear:both'></div><dl class="function">
+<dt id="sphinx_gallery.binder.gen_binder_url">
+<code class="descclassname">sphinx_gallery.binder.</code><code class="descname">gen_binder_url</code><span class="sig-paren">(</span><em>fname</em>, <em>binder_conf</em>, <em>gallery_conf</em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_gallery.binder.gen_binder_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a Binder URL according to the configuration in conf.py.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – The path to the <cite>.py</cite> file for which a Binder badge will be generated.</li>
+<li><strong>binder_conf</strong> (<em>dict | None</em>) – The Binder configuration dictionary. See <cite>gen_binder_rst</cite> for details.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>binder_url</strong> – A URL that can be used to direct the user to the live Binder
+environment.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div style='clear:both'></div></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">sphinx_gallery.binder</a><ul>
+<li><a class="reference internal" href="#binder-utility-functions">Binder utility functions</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sphinx_gallery.sorting.html"
+                        title="previous chapter">sphinx_gallery.sorting</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../auto_examples/index.html"
+                        title="next chapter">Gallery of Examples</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/gen_modules/sphinx_gallery.binder.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../auto_examples/index.html" title="Gallery of Examples"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sphinx_gallery.sorting.html" title="sphinx_gallery.sorting"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx-Gallery 0.1.13-git documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../reference.html" >Sphinx-Gallery API Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014-2018, Óscar Nájera.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
+    </div>
+  </body>
+</html>

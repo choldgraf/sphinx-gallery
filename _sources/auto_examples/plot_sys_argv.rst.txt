@@ -1,4 +1,8 @@
+.. note::
+    :class: sphx-glr-download-link-note
 
+    Click :ref:`here <sphx_glr_download_auto_examples_plot_sys_argv.py>` to download the full example code or run this example in your browser via Binder
+.. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_auto_examples_plot_sys_argv.py:
 
@@ -37,18 +41,23 @@ Note that your example will be run by sphinx-gallery without arguments.
     print('sys.argv:', sys.argv)
     print('parsed args:', parser.parse_args())
 
-**Total running time of the script:** ( 0 minutes  0.013 seconds)
+**Total running time of the script:** ( 0 minutes  0.003 seconds)
 
-.. figure:: http://mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_sys_argv.ipynb
-      :width: 150 px
-      :figclass: binder-badge
 
+.. _sphx_glr_download_auto_examples_plot_sys_argv.py:
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/plot_sys_argv.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download

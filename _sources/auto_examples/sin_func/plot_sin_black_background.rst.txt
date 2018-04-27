@@ -1,4 +1,8 @@
+.. note::
+    :class: sphx-glr-download-link-note
 
+    Click :ref:`here <sphx_glr_download_auto_examples_sin_func_plot_sin_black_background.py>` to download the full example code or run this example in your browser via Binder
+.. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_auto_examples_sin_func_plot_sin_black_background.py:
 
@@ -13,7 +17,7 @@ A simple example of the plot of a sin function on a black background
 
 
 .. image:: /auto_examples/sin_func/images/sphx_glr_plot_sin_black_background_001.png
-    :align: center
+    :class: sphx-glr-single-img
 
 
 
@@ -32,7 +36,8 @@ A simple example of the plot of a sin function on a black background
     fg_color = 'white'
 
     fig = plt.figure(facecolor=bg_color, edgecolor=fg_color)
-    axes = plt.axes((0.1, 0.1, 0.8, 0.8), axisbg=bg_color)
+    axes = fig.add_subplot(111)
+    axes.patch.set_facecolor(bg_color)
     axes.xaxis.set_tick_params(color=fg_color, labelcolor=fg_color)
     axes.yaxis.set_tick_params(color=fg_color, labelcolor=fg_color)
     for spine in axes.spines.values():
@@ -46,18 +51,23 @@ A simple example of the plot of a sin function on a black background
     plt.ylabel('$\sin(x)$', color=fg_color)
     plt.show()
 
-**Total running time of the script:** ( 0 minutes  0.065 seconds)
+**Total running time of the script:** ( 0 minutes  0.134 seconds)
 
-.. figure:: http://mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_sin_black_background.ipynb
-      :width: 150 px
-      :figclass: binder-badge
 
+.. _sphx_glr_download_auto_examples_sin_func_plot_sin_black_background.py:
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/sin_func/plot_sin_black_background.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download
