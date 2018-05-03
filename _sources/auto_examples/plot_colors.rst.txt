@@ -89,7 +89,7 @@ with interleaving prose.
     This writes to stdout and will be  displayed in the HTML file
 
 
-**Total running time of the script:** ( 0 minutes  0.260 seconds)
+**Total running time of the script:** ( 0 minutes  0.264 seconds)
 
 
 .. _sphx_glr_download_auto_examples_plot_colors.py:
@@ -104,7 +104,7 @@ with interleaving prose.
   .. container:: binder-badge
 
     .. image:: https://static.mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/_static/binder/auto_examples/plot_colors.ipynb
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/notebooks/auto_examples/plot_colors.ipynb
       :width: 150 px
 
 
