@@ -1,4 +1,8 @@
+.. note::
+    :class: sphx-glr-download-link-note
 
+    Click :ref:`here <sphx_glr_download_tutorials_seaborn_plot_seaborn_notebook.py>` to download the full example code or run this example in your browser via Binder
+.. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_tutorials_seaborn_plot_seaborn_notebook.py:
 
@@ -33,7 +37,7 @@ Just to have examples in the gallery of notebooks
 
 
 .. image:: /tutorials/seaborn/images/sphx_glr_plot_seaborn_notebook_001.png
-    :align: center
+    :class: sphx-glr-single-img
 
 
 
@@ -58,23 +62,28 @@ A new block in the notebook to have different styles
 
 
 .. image:: /tutorials/seaborn/images/sphx_glr_plot_seaborn_notebook_002.png
-    :align: center
+    :class: sphx-glr-single-img
 
 
 
 
-**Total running time of the script:** ( 0 minutes  0.727 seconds)
+**Total running time of the script:** ( 0 minutes  2.586 seconds)
 
-.. figure:: http://mybinder.org/badge.svg
-      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?filepath=_downloads/plot_seaborn_notebook.ipynb
-      :width: 150 px
-      :figclass: binder-badge
 
+.. _sphx_glr_download_tutorials_seaborn_plot_seaborn_notebook.py:
 
 
 .. only :: html
 
  .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+  .. container:: binder-badge
+
+    .. image:: https://static.mybinder.org/badge.svg
+      :target: https://mybinder.org/v2/gh/choldgraf/sphinx-gallery/gh-pages?urlpath=lab/tree/notebooks/tutorials/seaborn/plot_seaborn_notebook.ipynb
+      :width: 150 px
 
 
   .. container:: sphx-glr-download
